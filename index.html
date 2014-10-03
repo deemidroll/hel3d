@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Gulp Playground</title>
+        <link rel="stylesheet" href="./css/app.css" />
+    </head>
+    <body>
+        <svg width="100%" height="100%" style="margin-top: -50px">
+        <defs>
+            <mask id="mask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
+                <image y="-50%" width="100%" height="200%" xlink:href="./img/mask.png"></image>
+            </mask>
+        </defs>
+        </svg>
+        <canvas id="canvas"></canvas>
+        <canvas id="canvas2" style="mask:url(#mask);"></canvas>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
